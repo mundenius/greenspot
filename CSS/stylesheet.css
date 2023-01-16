@@ -5,7 +5,7 @@
 }
 .container-body {
     display: grid;
-    grid-template-areas: left center right;
+    height: fit-content;
     grid-template-columns: 1fr 2fr 1fr;
 }
 .container-footer {
@@ -16,14 +16,14 @@
 
 .container-header-sidesite {
     display: grid;
-    grid-template-areas: top bottom;
-    grid-template-rows: 4vw 2vw;
+    grid-template-areas: "titulo" "menu";
+    grid-template-rows: 2fr 1.5fr;
 }
-
 .container-body-sidesite {
     display: grid;
-    grid-template-areas: left center right;
-    grid-template-columns: 1.5vw 15vw 1.5vw;
+    grid-template-areas: "ad-left" "map" "ad-right";
+    grid-template-columns: 1fr 10fr 1fr;
+    
 }
 header{
     text-align: center;
@@ -56,17 +56,12 @@ h2{
 }
 
 body{
-    margin: 0px;
     background-color: #D2F4EA;
 }
-
-#map {
-    height: 100%;
-  }  
-
-@media screen and (max-width:600px){
-    .topnav {
-      width: 100%;
-    }
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
-
