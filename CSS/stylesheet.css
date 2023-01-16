@@ -14,6 +14,17 @@
     grid-template-rows: 0.5fr 0.5fr;
 }
 
+.container-header-sidesite {
+    display: grid;
+    grid-template-areas: top bottom;
+    grid-template-rows: 4vw 2vw;
+}
+
+.container-body-sidesite {
+    display: grid;
+    grid-template-areas: left center right;
+    grid-template-columns: 1.5vw 15vw 1.5vw;
+}
 header{
     text-align: center;
 
@@ -48,6 +59,10 @@ body{
     margin: 0px;
     background-color: #D2F4EA;
 }
+
+#map {
+    height: 100%;
+  }  
 
 @media screen and (max-width:600px){
     .topnav {
