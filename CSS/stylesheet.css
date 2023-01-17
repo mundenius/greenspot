@@ -5,7 +5,7 @@
 }
 .container-body {
     display: grid;
-    grid-template-areas: left center right;
+    height: fit-content;
     grid-template-columns: 1fr 2fr 1fr;
 }
 .container-footer {
@@ -14,6 +14,17 @@
     grid-template-rows: 0.5fr 0.5fr;
 }
 
+.container-header-sidesite {
+    display: grid;
+    grid-template-areas: "titulo" "menu";
+    grid-template-rows: 2fr 1.5fr;
+}
+.container-body-sidesite {
+    display: grid;
+    grid-template-areas: "ad-left" "map" "ad-right";
+    grid-template-columns: 1fr 10fr 1fr;
+    
+}
 header{
     text-align: center;
 
@@ -45,6 +56,5 @@ h2{
 }
 
 body{
-    margin: 0px;
     background-color: #D2F4EA;
 }
