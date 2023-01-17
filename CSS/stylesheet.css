@@ -48,10 +48,3 @@ body{
     margin: 0px;
     background-color: #D2F4EA;
 }
-
-@media screen and (max-width:600px){
-    .topnav {
-      width: 100%;
-    }
-}
-
