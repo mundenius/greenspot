@@ -1,60 +1,39 @@
- .container-header {
-    display: grid;
-    grid-template-areas: top bottom;
-    grid-template-rows: 1fr 0.5fr;
-}
-.container-body {
-    display: grid;
-    height: fit-content;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-.container-footer {
-    display: grid;
-    grid-template-areas: top bottom;
-    grid-template-rows: 0.5fr 0.5fr;
+html {
+    font-size: calc(15px + 0.390625vw);
+    font-family: Montserrat;
 }
 
-.container-header-sidesite {
-    display: grid;
-    grid-template-areas: "titulo" "menu";
-    grid-template-rows: 2fr 1.5fr;
-}
-.container-body-sidesite {
-    display: grid;
-    grid-template-areas: "ad-left" "map" "ad-right";
-    grid-template-columns: 1fr 10fr 1fr;
-    
-}
 header{
     text-align: center;
 
 }
 h1{
     text-align: center;
-    font-family: sans-serif;
-    font-size: 4.5vw;
+    font-family: Montserrat;
     font-weight: bold;
 }
 h2{
     text-align: center;
-    font-family: sans-serif;
-    font-size: 3vw;
+    font-family: Montserrat;
 }
 .homepagequestion {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 2.5vw;
+    font-family: Montserrat;
+
 }
 .topnav {
-    max-width: 100%;
+    min-width: 100%;
     background-position: center center;
     text-align: center;
 }
 .topnav a{
-    font-family: sans-serif; font-size: 4vw;
+    font-family: Montserrat; 
+    font-size: 4vw;
     text-align: center;
+    color: grey;
 }
 
 body{
     background-color: #D2F4EA;
+    font-family: Montserrat;
 }
