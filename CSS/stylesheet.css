@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html {
     font-size: calc(15px + 0.390625vw);
     font-family: Montserrat;
@@ -22,7 +26,6 @@ h2{
 
 }
 .topnav {
-    min-width: 100%;
     background-position: center center;
     text-align: center;
 }
