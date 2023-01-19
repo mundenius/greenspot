@@ -9,73 +9,124 @@
     <title>GreenSpot</title>
 </head>
 <body>
+    <header>
         <div class="row">
             <div class="col-12">
-                    <h1>GREEN SPOT</h1>
+                    <h1 class="display-1 text center">GREEN SPOT</h1>
             </div>
         </div>
+    </header>
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="homepagequestion">Que quieres reciclar hoy?</h2>
+            <div class="col-10">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quiero ayudar</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre GreenSpot</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 p-0">
-                
-            </div>
-            <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 p-0">
-                        <div class="topnav">
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Plastico.html">Plastico</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Tetrapack.html">Tetrapack</a> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="PapelCarton.html">Papel o Carton</a> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Lata.html">Lata</a> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Vidrio.html">Vidrio</a> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Aceite.html">Aceite</a> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col p-0">
-                                    <a href="Pilas.html">Pilas</a>
-                                </div>
+            <div class="col-2">
+                <!-- Button to open the modal login form -->
+                <button onclick="document.getElementById('id01').style.display='block'" id="loginbutton">Login</button>
+
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+
                             </div>
                         </div>
-        </div>
-            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 p-0"></div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <footer class="p-1">
-                            <ul class="nav justify-content-center">
-                                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quiero ayudar</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre GreenSpot</a></li>
-                            </ul>
-                        <p class="text-center text-muted">© 2023 Mundenius</p>
-                </footer>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>   
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                            </div>
+                        </div>
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+                </form>
+              </div>
             </div>
         </div>
+    </div>
+        </div>
+        <div class="container itemrecic">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-4">Que quieres reciclar hoy?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 p-0">
+                    
+                </div>
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 p-0">
+                    <div class="topnav">
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Plastico.html"><h4 class="display-5">Plastico</h4></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Tetrapack.html"><h4 class="display-5">Tetrapack</h4></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="PapelCarton.html"><h4 class="display-5">Papel o Carton</h4></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Lata.html"><h4 class="display-5">Lata</h4></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Vidrio.html"><h4 class="display-5">Vidrio</h4></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Aceite.html"><h4 class="display-5">Aceite</h4></a> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <a href="Pilas.html"><h4 class="display-5">Pilas</h4></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 p-0">
+
+                </div>
+            </div>
+        </div>
+        <footer class="p-1">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center text-muted">© 2023 Mundenius</p>
+                </div>
+            </div>
+        </footer>
+        <script src="scripts/main.js"></script>
 </body>
 </html>
 
